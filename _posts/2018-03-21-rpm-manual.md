@@ -1,4 +1,4 @@
-# rpm 用法
+# rpm
 
 查看所有安装的rpm包 rpm -qa
 
