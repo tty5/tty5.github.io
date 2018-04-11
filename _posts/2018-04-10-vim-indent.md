@@ -6,3 +6,12 @@ set autoindent，即每行的缩进值与上一行相等，使用 set noautoinde
 set cindent，它会按照 C 语言的语法，自动地调整缩进的长度，比如，当你输入了半条语句然后回车时，缩进会自动增加一个 TABSTOP 值，当你键入了一个右花括号时，会自动减少一个 TABSTOP 值。
 
 set smartindent，在这种缩进模式中，每一行都和前一行有相同的缩进量，同时这种缩进形式能正确的识别出花括号，当遇到右花括号（}），则取消缩进形式。此外还增加了识别C语言关键字的功能。如果一行是以#开头的，那么这种格式将会被特殊对待而不采用缩进格式。
+
+tabstop=8 tab显示长度为8
+
+set shiftwidth=8 一级缩进为8
+
+set noexpandtab 保留tab
+
+set nocompatible 不是vi模式 可以使用backspace
+
