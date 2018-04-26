@@ -83,3 +83,10 @@ foreach默认是所有的task
 sym -l 显示所有符号的地址
 sym address 或者 name 显示这个地址所在的符号
 ```
+
+# dev
+```
+dev -d 显示io统计
+dev -i 显示io端口使用
+dev -p 显示pci设备
+```
