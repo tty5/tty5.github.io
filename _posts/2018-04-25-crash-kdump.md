@@ -57,4 +57,12 @@ dis -s address 显示这个地址的源代码对应的地方
 总结起来, 给了一个地址, 想看源代码内容就是-s, 只对应行号, 那就是向前, 向后-lr, -lf查看
 ```
 
-
+# vm
+```
+vm 显示一个task的vm映射情况
+vm -m 显示mm_struct结构体内容
+vm -v 遍历vm_area_struct显示里面的内容
+vm -f 解析vm flags
+vm -p 每个页的映射情况都打印出来
+vm -P vma 只打印一个vma的映射情况
+```
