@@ -72,3 +72,6 @@ vm -P vma 只打印一个vma的映射情况
 foreach pid taskp name user kernel RU IN UN 等来执行命令, 命令有bt ps等
 foreach默认是所有的task
 ```
+
+# files
+显示task打开的文件描述符
