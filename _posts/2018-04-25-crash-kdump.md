@@ -66,3 +66,9 @@ vm -f 解析vm flags
 vm -p 每个页的映射情况都打印出来
 vm -P vma 只打印一个vma的映射情况
 ```
+
+# foreach
+```
+foreach pid taskp name user kernel RU IN UN 等来执行命令, 命令有bt ps等
+foreach默认是所有的task
+```
