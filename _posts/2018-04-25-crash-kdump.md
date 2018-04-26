@@ -77,3 +77,9 @@ foreach默认是所有的task
 ```
 显示task打开的文件描述符
 ```
+
+# sym
+```
+sym -l 显示所有符号的地址
+sym address 或者 name 显示这个地址所在的符号
+```
