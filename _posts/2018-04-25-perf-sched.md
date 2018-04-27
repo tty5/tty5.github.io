@@ -34,3 +34,8 @@ perf record -e sched:sched_switch  -a -- python 1.py
          swapper     0 [003] 23767.679446: sched:sched_switch: swapper/3:0 [120] R ==> python:24400 [120]
           python 24400 [003] 23767.681327: sched:sched_switch: python:24400 [120] x ==> swapper/3:0 [120]
 ```
+
+## 如果需要知道每次睡眠的原因的话, 调用栈就是原因, 可以把唤醒的调用栈也加上
+```
+perf record -e sched:sched_switch  -a --call-graph dwarf -- python 1.py
+```
