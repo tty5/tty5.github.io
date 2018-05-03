@@ -51,6 +51,7 @@ twitter_site: "@HeiswayiNrird"
 gems:
   - bourbon
   - jekyll-paginate
+  - jekyll-postfiles
 
 # navbar pages
 navbar:
