@@ -14,7 +14,7 @@ do_generic_file_read就是通用的page cache函数, 申请, 找到页, 用mappi
 其他都一样, file->f_op->read_iter[blkdev_read_iter], mapping->a_ops->readpage[blkdev_readpage]
 ```
 
-# 那些算buffer
+# 哪些算buffer
 ```
 所有的file cache, 算整体, 减去块设备链表上的块设备的page, 就是cache, 块设备上的page算buffer
 ```
