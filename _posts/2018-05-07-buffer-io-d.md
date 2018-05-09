@@ -18,3 +18,7 @@ do_generic_file_read就是通用的page cache函数, 申请, 找到页, 用mappi
 ```
 所有的file cache, 算整体, 减去块设备链表上的块设备的page, 就是cache, 块设备上的page算buffer
 ```
+
+# vma映射
+
+每个vma映射空间都有一个vma->vm_ops[<ext4_file_vm_ops], stack空间有自己的操作函数, 文件映射空间有自己的操作函数, 在这些函数里面, 要么申请一个page cache来填充这个映射, 要么就是一个匿名页
