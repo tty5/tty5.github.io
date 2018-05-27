@@ -2,6 +2,7 @@
 
 makefile去优化挺麻烦的, 改个编译器简单
 
+
 ```
 diff --git a/src/cmd/compile/internal/gc/main.go b/src/cmd/compile/internal/gc/main.go
 index b651c9a..22e0334 100644
