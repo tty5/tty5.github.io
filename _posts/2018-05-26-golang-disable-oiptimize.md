@@ -39,4 +39,4 @@ index 497970b..176bff6 100644
         cfg.CmdName = args[0] // for error messages
         if args[0] == "help" {
                 help.Help(args[1:])
-``
+```
