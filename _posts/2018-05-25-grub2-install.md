@@ -7,3 +7,5 @@ mbr分区的话 需要在mbr和第一个分区之间留一个gap, 好放core.img
 gpt分区的话 需要有一个标记为bios_grub的分区来放core.img,
 
 安装target分为2种, 一种是i386-pc, 另一种是uefi
+
+set 1 bios_grub on
