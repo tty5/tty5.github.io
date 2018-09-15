@@ -27,3 +27,7 @@ git reset -- file
 ## repo区操作
 
 git reset --soft version 只修改repo区
+
+#### 修改历史git version
+
+git rebase -i 之前的版本, 然后edit, 然后修改git commit
