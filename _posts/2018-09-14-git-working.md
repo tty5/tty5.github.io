@@ -15,3 +15,15 @@ git co不加版本号就是从stage签出
 git co HEAD -- file
 
 加版本号就是同步repo的内容, stage, work都会变, git是从上到下的变, 不能跳着变
+
+## stage区操作
+
+#### 把stage区内容改成work区内容
+git add
+
+#### 把stage区内容改成repo内容
+git reset -- file
+
+## repo区操作
+
+git reset --soft version 只修改repo区
