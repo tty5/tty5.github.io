@@ -24,13 +24,13 @@
 
 ```$ openssl req -subj "CN=x.x" -new -key server.key -out server.csr```
 
-如果需要增加ip的, 加上这个san
-
-```-extfile <(printf "subjectAltName=IP:8.8.8.8")```
-
 5.用 2 创建的 CA 证书给 4 生成的 签名请求 进行签名
 
 ```$ openssl x509 -req -days 3650 -in server.csr -CA ca.crt -CAkey ca.key -set_serial 01 -out server.crt```
+
+如果需要增加ip的, 加上这个san
+
+```-extfile <(printf "subjectAltName=IP:8.8.8.8")```
 
 # 添加ca.crt到系统
 
