@@ -20,9 +20,13 @@
 
 ```$ openssl genrsa -out server.key 2048```
 
-4.生成要颁发证书的证书签名请求，证书签名请求当中的 Common Name 必须区别于 CA 的证书里面的 Common Name
+4.生成要颁发证书的证书签名请求, CN就是域名, 和上面ca的CN不要一样
 
-```$ openssl req -subj "/C=CN/ST=Tianjin/L=Tianjin/O=Mocha/OU=Mocha Software/CN=test2.sslpoc.com/emailAddress=test@mochasoft.com.cn" -new -key server.key -out server.csr```
+```$ openssl req -subj "CN=x.x" -new -key server.key -out server.csr```
+
+如果需要增加ip的, 加上这个san
+
+```-extfile <(printf "subjectAltName=IP:8.8.8.8")```
 
 5.用 2 创建的 CA 证书给 4 生成的 签名请求 进行签名
 
