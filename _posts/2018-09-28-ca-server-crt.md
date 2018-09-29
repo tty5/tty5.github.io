@@ -12,6 +12,10 @@
 
 ```$ openssl req -subj "/CN=Server CA" -new -x509 -days 3650 -key ca.key -out ca.crt```
 
+查看ca证书内容
+
+```openssl x509 -in ca.crt -noout -text```
+
 3.生成需要颁发证书的私钥
 
 ```$ openssl genrsa -out server.key 2048```
