@@ -4,6 +4,10 @@
 
 ```$openssl genrsa -out ca.key 2048```
 
+私钥生成公钥
+
+```openssl rsa -in x.key -pubout > x.pub ```
+
 2.生成 CA 的自签名证书
 
 ```$ openssl req -subj "/C=CN/ST=Tianjin/L=Tianjin/O=Mocha/OU=Mocha Software/CN=Server CA/emailAddress=test@mochasoft.com.cn" -new -x509 -days 3650 -key ca.key -out ca.crt```
