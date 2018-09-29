@@ -10,7 +10,7 @@
 
 2.生成 CA 的自签名证书
 
-```$ openssl req -subj "/C=CN/ST=Tianjin/L=Tianjin/O=Mocha/OU=Mocha Software/CN=Server CA/emailAddress=test@mochasoft.com.cn" -new -x509 -days 3650 -key ca.key -out ca.crt```
+```$ openssl req -subj "/CN=Server CA" -new -x509 -days 3650 -key ca.key -out ca.crt```
 
 3.生成需要颁发证书的私钥
 
