@@ -31,3 +31,9 @@
 列出所有的源 yum repolist
 
 列出所有的软件包 yum list
+
+临时enbale一个repo yum --enablerepo google-chrome list
+
+临时enable所有的repo yum --enablerepo=* repolist
+
+enable disable一个repo, 去repo file文件夹里面改
