@@ -9,6 +9,7 @@ systemctl start kdump
 vmcore路径在/etc/kdump.conf文件里面
 
 # crash
+* crash读的是内存值, 不是符号文件的值
 
 ## config
 直接全部打印 set scroll off
