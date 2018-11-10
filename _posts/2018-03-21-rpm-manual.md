@@ -37,3 +37,21 @@
 临时enable所有的repo yum --enablerepo=* repolist
 
 enable disable一个repo, 去repo file文件夹里面改
+
+# 查看rpm repo url
+
+查看repo的url, 直接看文件就可以了
+
+查看rpm的url, 直接看
+```
+Use yumdownloader. It's in the yum-utils package.
+
+To get URLs for packages:
+查看url
+yumdownloader --urls mariadb-server
+To actually download a package and all its dependencies:
+
+下载依赖和自己
+yumdownloader --resolve mariadb-server
+You don't really need aria2 at all
+```
