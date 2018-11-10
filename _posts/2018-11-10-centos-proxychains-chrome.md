@@ -17,3 +17,9 @@ gpgkey=https://dl-ssl.google.com/linux/linux_signing_key.pub
 
 yum --enablerepo google-chrome -y install google-chrome-stable
 ```
+
+## root 界面启动
+```
+vim /usr/bin/google-chrome
+最后加上 "--no-sandbox"
+```
