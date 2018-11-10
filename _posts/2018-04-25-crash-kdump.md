@@ -77,6 +77,8 @@ foreach默认是所有的task
 # files
 ```
 显示task打开的文件描述符
+
+file <address> 显示结构成员
 ```
 
 # sym
