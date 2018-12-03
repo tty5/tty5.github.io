@@ -1,5 +1,11 @@
 # docker image
 
+```
+docker images
+REPOSITORY          TAG                 IMAGE ID            CREATED             SIZE
+docker.io/python    2.7                 f67e752245d6        2 weeks ago         908 MB
+```
+
 #获取tag list
 ```
 curl  https://pqbap4ya.mirror.aliyuncs.com/v2/library/python/tags/list
