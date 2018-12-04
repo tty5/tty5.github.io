@@ -13,6 +13,9 @@ curl  https://pqbap4ya.mirror.aliyuncs.com/v2/library/python/tags/list
 
 #获取manifest
 ```
+根据digest获取manifest
+curl -H "Accept: application/vnd.docker.distribution.manifest.v2+json" https://pqbap4ya.mirror.aliyuncs.com/v2/library/python/manifests/sha256:0bfc35ca8afbf04440152f1b8b15b928d99ba4a319e4967d50166bab6f40e084
+
 curl -H "Accept: application/vnd.docker.distribution.manifest.v2+json" https://pqbap4ya.mirror.aliyuncs.com/v2/library/python/manifests/2.7
 
 {
@@ -50,3 +53,5 @@ curl  https://pqbap4ya.mirror.aliyuncs.com/v2/library/python/blobs/sha256:54f7e8
 #image id 就是config file的sha256
 
 #image digest是manifest的sha256, image digest唯一确定镜像
+
+#image id获取不了manifest, 因为可以好几个manifest, 里面的image id是一样的 layer的传输方式不一样
