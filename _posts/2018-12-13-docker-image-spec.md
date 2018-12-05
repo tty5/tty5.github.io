@@ -6,12 +6,15 @@ REPOSITORY          TAG                 IMAGE ID            CREATED             
 docker.io/python    2.7                 f67e752245d6        2 weeks ago         908 MB
 ```
 
-#获取tag list
+# 获取tag list
 ```
 curl  https://pqbap4ya.mirror.aliyuncs.com/v2/library/python/tags/list
 ```
 
-#获取manifest
+# note
+image id决定文件的内容, image的digest是manifest的sha256, 不止决定内容, 还决定传输的格式和细节
+
+# 获取manifest
 ```
 根据digest获取manifest
 curl -H "Accept: application/vnd.docker.distribution.manifest.v2+json" https://pqbap4ya.mirror.aliyuncs.com/v2/library/python/manifests/sha256:0bfc35ca8afbf04440152f1b8b15b928d99ba4a319e4967d50166bab6f40e084
@@ -34,7 +37,7 @@ curl -H "Accept: application/vnd.docker.distribution.manifest.v2+json" https://p
       },
 ```
 
-#获取image config
+# 获取image config
 ```
 curl  https://pqbap4ya.mirror.aliyuncs.com/v2/library/python/blobs/sha256:f67e752245d645cd8f06b25786676e59f08638e57b6f1ee7021525a732da4aa4
 
