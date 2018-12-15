@@ -73,8 +73,14 @@ $curl   https://registry.cn-hangzhou.aliyuncs.com/v2/
 ```
 curl   https://dockerauth.cn-hangzhou.aliyuncs.com/auth?service=registry.aliyuncs.com:cn-hangzhou:26842
 ```
+
 使用token
 ```
 curl -H "Authorization: Bearer $a"  https://registry.cn-hangzhou.aliyuncs.com/v2/
 {}
+```
+
+获取token的时候, 要加scope, 不然操作不了对应的repo
+```
+curl   'https://dockerauth.cn-hangzhou.aliyuncs.com/auth?service=registry.aliyuncs.com:cn-hangzhou:26842&scope=repository:lxx/busybox:pull'
 ```
