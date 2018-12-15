@@ -58,3 +58,23 @@ curl  https://pqbap4ya.mirror.aliyuncs.com/v2/library/python/blobs/sha256:54f7e8
 #image digest是manifest的sha256, image digest唯一确定镜像
 
 #image id获取不了manifest, 因为可以好几个manifest, 里面的image id是一样的 layer的传输方式不一样
+
+# docker 验证用户
+直接curl /v2有结果的不需要用户密码
+```
+curl  https://pqbap4ya.mirror.aliyuncs.com/v2/
+{}
+返回401的就需要密码
+$curl   https://registry.cn-hangzhou.aliyuncs.com/v2/
+{"errors":[{"code":"UNAUTHORIZED","message":"authentication required","detail":null}]}
+```
+
+获取token, url在返回401的header里面
+```
+curl   https://dockerauth.cn-hangzhou.aliyuncs.com/auth?service=registry.aliyuncs.com:cn-hangzhou:26842
+```
+使用token
+```
+curl -H "Authorization: Bearer $a"  https://registry.cn-hangzhou.aliyuncs.com/v2/
+{}
+```
