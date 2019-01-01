@@ -1,12 +1,12 @@
 # 没有类, 直接写函数
 ```
 def test_displayEmployee():
-    print "\ntest_displayEmployee"
+    print "test_displayEmployee"
     return True
 
 
 def test_displayEmployeexx():
-    print "\ntest_displayEmployeexx"
+    print "test_displayEmployeexx"
     return True
 ```
 ```
