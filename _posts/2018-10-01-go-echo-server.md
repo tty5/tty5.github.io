@@ -1,3 +1,7 @@
+---
+categories: goland
+---
+
 # go tcp连接服务端
 
 https://github.com/golergka/go-tcp-echo/blob/master/go-tcp-echo.go
