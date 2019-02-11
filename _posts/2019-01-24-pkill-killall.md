@@ -1,3 +1,7 @@
+---
+categories: linux-cmd
+---
+
 ```
 平时都是kill pid, 有时候挺麻烦的, 虽然也知道killall, pkill命令的存在, 但是总有不确定的感觉, 比如killall a, 会不会把aa kill掉, /usr/bin/a能不能一起kill掉
 
