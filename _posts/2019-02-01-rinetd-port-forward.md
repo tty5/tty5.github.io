@@ -1,3 +1,7 @@
+---
+categories: linux-cmd
+---
+
 # 配置
 ```
 docker run -it  --network host fedora bash
