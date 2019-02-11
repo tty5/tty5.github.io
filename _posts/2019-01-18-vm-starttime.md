@@ -1,3 +1,7 @@
+---
+categories: linux-cmd
+---
+
 # starttime
 
 ```
