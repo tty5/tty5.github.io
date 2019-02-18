@@ -1,3 +1,7 @@
+---
+categories: linux-cmd
+---
+
 # install
 
 yum install kexec-tools crash yum-utils -y
