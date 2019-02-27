@@ -9,7 +9,7 @@ yum install epel-release -y
 
 yum install make git procps-ng vim less wget unzip bash-completion openssh-clients iproute iputils gcc gdb net-tools python2-pip -y
 
-yum install rpmdevtools elfutils-libelf-devel openssl-devel bc rpm-build flex bison -y
+yum install man rpmdevtools elfutils-libelf-devel openssl-devel bc rpm-build flex bison -y
 
 pip install pip -U -i https://pypi.tuna.tsinghua.edu.cn/simple
 
