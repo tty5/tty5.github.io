@@ -12,6 +12,8 @@ yum install jq make git procps-ng vim less wget unzip bash-completion openssh-cl
 
 yum install pciutils openssl man rpmdevtools elfutils-libelf-devel openssl-devel bc rpm-build flex bison -y
 
+yum install btrfs-progs-devel libseccomp-devel -y
+
 pip install pip -U -i https://pypi.tuna.tsinghua.edu.cn/simple
 
 pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
