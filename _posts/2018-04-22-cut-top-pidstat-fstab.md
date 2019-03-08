@@ -45,6 +45,8 @@ LABEL=/    /    ext3    defaults    1    1
 /proc /chroot/mysql/proc none defaults,bind 0 0
 
 bind使用方式
+findmnt [/]是bind mount
+
 第一列：设备名或者设备卷标名 (/dev/sda10 或者 LABEL=/)
 第二列: 设备挂载目录 (例如上面的 "/" 或者 "/mnt/D/")
 第三列: 设备文件系统 (例如上面的 "ext3" 或者 "vfat")
