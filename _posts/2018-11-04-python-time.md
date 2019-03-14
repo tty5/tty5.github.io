@@ -1,4 +1,5 @@
 # python 时间处理
+
 python的时间有三种类型
 - timestamp 浮点数 没有时区概念
 - 时间元组 年月日结构体 有时区概念
@@ -30,4 +31,74 @@ datetime.datetime(2018, 11, 5, 19, 2, 15, 620000)
 datetime -> timestamp
 (datetime.datetime(2018, 11, 5, 19, 2, 15, 620000) - datetime.datetime.fromtimestamp(0)）.total_seconds()
 1541415735.62
+```
+
+
+# python aliyun mirror
+```
+pip install --upgrade pip  -i https://mirrors.aliyun.com/pypi/simple
+```
+
+# qh
+## 临时使用
+```
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple some-package
+```
+
+## 设为默认
+升级 pip 到最新的版本 (>=10.0.0) 后进行配置
+```
+pip install pip -U -i https://pypi.tuna.tsinghua.edu.cn/simple
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+```
+
+# python nodetest
+
+## 没有类, 直接写函数
+```
+def test_displayEmployee():
+    print "test_displayEmployee"
+    return True
+
+
+def test_displayEmployeexx():
+    print "test_displayEmployeexx"
+    return True
+```
+```
+nosetests -s -v 4.py 
+4.test_displayEmployee ... 
+test_displayEmployee
+ok
+4.test_displayEmployeexx ... 
+test_displayEmployeexx
+ok
+
+```
+
+# 使用类的
+```
+import unittest
+
+class rbb(unittest.TestCase):
+
+    def setUp(self):
+        print ("TestUM:setup() before each test method")
+
+    def tearDown(self):
+        print ("TestUM:teardown() after each test method")
+
+    def test_1(self):
+        print "test_1"
+        return True
+
+    def test_2(self):
+        print "test_2"
+        return True
+
+```
+
+```
+nosetests  -v 3.py
+-s 打印出脚本日志
 ```
