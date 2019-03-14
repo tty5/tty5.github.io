@@ -16,7 +16,7 @@ ClientAliveCountMax  60
 
 在其中类似的添加相应的参数也行
 
-ServerAliveInterval  60
+ServerAliveInterval  5
 
-ServerAliveCountMax  60
+ServerAliveCountMax  3
 
