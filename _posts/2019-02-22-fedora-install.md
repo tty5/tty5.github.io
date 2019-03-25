@@ -12,7 +12,7 @@ yum install dstat pixman-devel glib2-devel psmisc strace sysstat ctags jq make g
 
 yum install traceroute pciutils openssl man rpmdevtools elfutils-libelf-devel openssl-devel bc rpm-build flex bison -y
 
-yum install libaio-devel btrfs-progs-devel libseccomp-devel -y
+yum install perl-podlators texinfo numactl-devel libuuid-devel libpng-devel cyrus-sasl-devel libtool acpica-tools libstoraged-devel lz4-devel libaio-devel btrfs-progs-devel libseccomp-devel -y
 
 pip install pip -U -i https://pypi.tuna.tsinghua.edu.cn/simple
 
