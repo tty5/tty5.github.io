@@ -1,3 +1,6 @@
+# 查看server 证书
+```echo quit | openssl s_client -showcerts -servername rbb.red -connect rbb.red:443 2>/dev/null |openssl x509 -in /dev/stdin -noout -text```
+
 # 做个ca的证书, server证书的时候, CN要换一下
 
 1.创建 CA 私钥
@@ -24,7 +27,7 @@ $ openssl req -subj "/CN=Server CA" -new -x509 -days 3650 -key ca.key -out ca.cr
 
 4.生成要颁发证书的证书签名请求, CN就是域名, 和上面ca的CN不要一样
 
-```$ openssl req -subj "CN=x.x" -new -key server.key -out server.csr```
+```$ openssl req -subj "/CN=x.x" -new -key server.key -out server.csr```
 
 5.用 2 创建的 CA 证书给 4 生成的 签名请求 进行签名
 
