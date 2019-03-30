@@ -1,3 +1,6 @@
+# go 函数指针
+go的函数指针可以用结构体的成员函数来做初始化, 自然要使用一个对象的函数指针
+
 # go http server 服务端
 ```
 func myHandler(w http.ResponseWriter, r *http.Request) {
