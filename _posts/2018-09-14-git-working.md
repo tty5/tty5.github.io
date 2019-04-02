@@ -18,7 +18,7 @@ proxychains4 -q git fetch url refs/pull/412/*:refs/tmp/*
 
 ## git co
 ```
-git co -- file 
+git co -- file
 ```
 git co 后面跟文件的时候, 表示把某个文件或者文件夹签出, 比如git co HEAD^^^ a.c stage区和work区都会更改, 如果不加版本号, 就从stage签出
 
