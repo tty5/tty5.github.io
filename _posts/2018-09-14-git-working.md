@@ -1,5 +1,8 @@
 # git tips
 
+## git pull github pr
+git fetch origin pull/1/head
+
 ## git fetch
 ```git fetch url fetch```默认的refs
 
