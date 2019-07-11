@@ -2,7 +2,7 @@
 
 context作用于多个goroutine做任务取消用
 
-context.newxxx出来的都是子context, 父context取消, 会把所有的子context都取消
+context.newxxx出来的都是子context, 父context取消, 其实就是关闭channel, 会把所有的子context都取消
 
 ctx, cancel := context.WithCancel(context.Background())
 
