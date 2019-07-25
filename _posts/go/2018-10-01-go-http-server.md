@@ -11,6 +11,30 @@ http.HandleFunc("/", myHandler)
 log.Fatal(http.ListenAndServe(":8080", nil))
 ```
 
+# server 使用http.Server对象
+
+```
+server := http.Server{
+		Addr:    ":8080",
+		Handler: x,
+}
+log.Fatal(server.ListenAndServe())
+
+其中的Handler只要实现ServeHTTP(ResponseWriter, *Request)就可以, 可以使用任意对象
+
+比如
+type xx struct {
+}
+
+func (p *xx) ServeHTTP(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintln(w,"123")
+}
+server := http.Server{
+		Addr:    ":8080",
+		Handler: &xx{},
+}
+```
+
 # go http client 客户端
 ```
     response, err := http.Get("http://www.baidu.com")
